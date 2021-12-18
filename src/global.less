@@ -1,0 +1,198 @@
+@import '~ant-design-vue/es/style/themes/default.less';
+
+html,
+body,
+#app,
+#root {
+  height: 100%;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout.layout-basic {
+  height: 100vh;
+  min-height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/*定义滚动条宽高及背景，宽高分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+  /*对垂直流动条有效*/
+  width: 10px;
+  /*对水平流动条有效*/
+  height: 10px;
+}
+
+/*定义滚动条的轨道颜色、内阴影及圆角*/
+::-webkit-scrollbar-track {
+  height: 10px;
+  background: #F5F5F5;
+  box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.06);
+}
+
+
+/*定义滑块颜色、内阴影及圆角*/
+::-webkit-scrollbar-thumb {
+  height: 4px;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+/*定义两端按钮的样式*/
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+/*定义右下角汇合处的样式*/
+::-webkit-scrollbar-corner {
+  display: none;
+}
+
+// 鼠标手指样式
+.mouse-pointer {
+  cursor: pointer;
+}
+
+// 数据列表 样式
+.table-alert {
+  margin-bottom: 16px;
+}
+
+// 数据列表 操作
+.table-operator {
+  margin-bottom: 18px;
+
+  button {
+    margin-left: 8px;
+  }
+}
+
+// 数据列表 搜索条件
+.table-page-search-wrapper {
+
+  .ant-form-inline {
+    .ant-form-item {
+      display: flex;
+      margin-bottom: 24px;
+      margin-right: 0;
+
+      .ant-form-item-control-wrapper {
+        flex: 1 1;
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      >.ant-form-item-label {
+        line-height: 32px;
+        padding-right: 8px;
+        width: auto;
+      }
+
+      .ant-form-item-control {
+        height: 32px;
+        line-height: 32px;
+      }
+    }
+  }
+
+  .table-page-search-submitButtons {
+    display: block;
+    margin-bottom: 24px;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+
+    &-thead>tr,
+    &-tbody>tr {
+
+      >th,
+      >td {
+        white-space: pre;
+
+        >span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// 常用的主页面布局 控制宽度
+.common-main-view {
+  width: calc(100vw - 324px);
+  min-width: 1136px;
+}
+
+// 常用的页面布局 card
+.common-card-view {
+  width: calc(100vw - 324px);
+  min-height: 100%;
+}
+
+// 表单中选填项标识
+.form-optional-text {
+  color: #999;
+}
+
+// 输入框小尾巴
+.ant-input-affix-wrapper .ant-input-suffix {
+  color: #999;
+}
+
+// 表格分页组件
+.ant-table-pagination.ant-pagination {
+  margin: 16px 0 8px;
+}
+
+// 表格下面的线不要
+.ant-table-placeholder {
+  border-bottom: 0;
+}
+
+// 弹窗通用样式 最大高度
+.ant-modal-body {
+  max-height: 55vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+// 下拉框通用样式 最大高度
+.ant-select-dropdown {
+  max-height: 50vh !important;
+}
+
+// 提示弹窗 背景色
+.notification-success {
+  background-color: #f6ffed;
+  border: 1px solid #b7eb8f;
+}
+
+.notification-error {
+  background-color: #fff1f0;
+  border: 1px solid #ffa39e;
+}
+
+.ant-pro-global-header-trigger {
+  padding: 0;
+}

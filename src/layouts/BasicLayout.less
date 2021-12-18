@@ -1,0 +1,79 @@
+@import "~ant-design-vue/es/style/themes/default.less";
+
+section.ant-layout.sidemenu {
+  flex-shrink: 0;
+}
+
+.ant-layout-footer {
+  padding: 0;
+}
+
+.ant-pro-sider-menu-sider.light .ant-pro-sider-menu-logo h1 {
+  font-size: 17px;
+  margin-left: 0;
+}
+
+.ant-pro-global-header-index-right {
+  margin-right: 8px;
+
+  &.ant-pro-global-header-index-dark {
+    .ant-pro-global-header-index-action {
+      color: hsla(0, 0%, 100%, .85);
+
+      &:hover {
+        background: #1890ff;
+      }
+    }
+  }
+
+  .ant-pro-account-avatar {
+    .antd-pro-global-header-index-avatar {
+      margin:~'calc((@{layout-header-height} - 24px) / 2)'0;
+      margin-right: 8px;
+      color: @primary-color;
+      vertical-align: top;
+      background: rgba(255, 255, 255, 0.85);
+    }
+  }
+
+  .menu {
+    .anticon {
+      margin-right: 8px;
+    }
+
+    .ant-dropdown-menu-item {
+      min-width: 100px;
+    }
+  }
+}
+
+.back-top {
+  right: 30px;
+}
+
+.ant-pro-basicLayout-children-content-wrap {
+  height: 100%;
+
+  >.ant-pro-grid-content {
+    height: 100%;
+    // display: flex;
+    // flex-direction: column;
+
+    >.ant-pro-page-header-wrap {
+      // flex: 1;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+      >.ant-pro-grid-content {
+        flex: 1;
+
+        >.ant-pro-page-header-wrap-children-content {
+          height: 100%;
+          margin: 0 0 -24px;
+          padding: 24px;
+        }
+      }
+    }
+  }
+}
